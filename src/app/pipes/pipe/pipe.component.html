@@ -1,0 +1,29 @@
+<p>pipe works!</p>
+<p>{{person| json}}</p>
+<p>{{person2| json}}</p>
+<p>{{'Herşeyim'| uppercase}}</p>
+<p>{{'Herşeyim'| lowercase}}</p>
+<p>{{person.lastName| uppercase}} {{person.firstName| titlecase}} </p>
+
+<h3>Date pipes</h3>
+<p>{{myDate|date:'dd/MM/yyy y'}}</p>
+<p>{{myDate|date:'longDate'}}</p>
+<p>{{myDate|date:'fullDate'}}</p>
+<p>{{myDate|date:'shortTime'}}</p>
+
+<h3>Currency pipes</h3>
+<p>{{price|currency}}</p>
+
+<h3>Decimal pipes</h3>
+<p>{{5.13432423| number:'1.1-3'}}</p>
+<p>{{5.13432423| number:'1.4'}}</p>
+
+<h3>Slice pipes</h3>
+<p>{{'AlperenErdem'|slice:0:3}}</p>
+
+<h3>Percent pipes</h3>
+<p>{{0.12345|percent}}</p>
+<p>{{0.12345|percent:'1.0-3'}}</p>
+
+<p>Custom Pipes</p>
+<p>{{person.firstName| upper}}  </p>
